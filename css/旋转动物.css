@@ -1,0 +1,98 @@
+body {
+    background: #00FFFF;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    // border: 1px solid red;
+    position: relative;
+    margin: 200px auto;
+    color: #000;
+    transform-style: preserve-3d;
+    // transform: rotateX(0deg) rotateY(20deg) rotateZ(20deg);
+    animation: move 100s linear infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(360deg);
+    }
+    100% {
+        transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg);
+    }
+}
+
+.box img {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    // border: 1px solid red;
+}
+
+// body:hover img{
+//     width: 10px;
+//     height: 15px;
+// }
+.box img:nth-child(1) {
+    background: red;
+    transform: rotate(0deg) translateZ(550px) translateY(-120px);
+}
+
+.box img:nth-child(2) {
+    background: blue;
+    transform: rotateY(30deg) translateZ(550px) translateY(-80px);
+}
+
+.box img:nth-child(3) {
+    background: green;
+    transform: rotateY(60deg) translateZ(550px) translateY(-40px);
+}
+
+.box img:nth-child(4) {
+    background: #FFD700;
+    transform: rotateY(90deg) translateZ(550px) translateY(0px);
+}
+
+.box img:nth-child(5) {
+    background: #FFD700;
+    transform: rotateY(120deg) translateZ(550px) translateY(40px);
+}
+
+.box img:nth-child(6) {
+    background: #FFD700;
+    transform: rotateY(150deg) translateZ(550px) translateY(80px);
+}
+
+.box img:nth-child(7) {
+    background: #FFD700;
+    transform: rotateY(180deg) translateZ(550px) translateY(40px);
+}
+
+.box img:nth-child(8) {
+    background: #FFD700;
+    transform: rotateY(210deg) translateZ(550px) translateY(0px);
+}
+
+.box img:nth-child(9) {
+    background: #FFD700;
+    transform: rotateY(240deg) translateZ(550px) translateY(-40px);
+}
+
+.box img:nth-child(10) {
+    background: #FFD700;
+    transform: rotateY(270deg) translateZ(550px) translateY(-80px);
+}
+
+.box img:nth-child(11) {
+    background: #FFD700;
+    transform: rotateY(300deg) translateZ(550px) translateY(-120px);
+}
+
+.box img:nth-child(12) {
+    background: #FFD700;
+    transform: rotateY(330deg) translateZ(550px) translateY(-160px);
+}
